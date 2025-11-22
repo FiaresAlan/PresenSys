@@ -1,4 +1,5 @@
 const sql = require('mssql');
+
 const { getPool } = require('../config/db');
 
 const Aluno = {
