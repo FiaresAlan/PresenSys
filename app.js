@@ -1,12 +1,17 @@
 const express = require("express");
 require('dotenv').config();
+
 const {alunoRouter} = require("./src/routes/alunoRoutes");
 const {presencaRouter} = require ("./src/routes/presencaRoutes");
 const {professorRouter} = require ("./src/routes/professorRoutes");
 const {authRouter} = require ("./src/routes/authRoutes");
 
+const {connect} = require('./src/config/db');
+
+connect();
+
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 app.use(express.json());
 
@@ -20,5 +25,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta http://localhost:${PORT}`);
+  console.log(`Servidor rodando na porta http://localhost:${process.env.PORT}`);
 });
