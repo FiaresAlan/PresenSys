@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const { getAllProfessores } = require('../controllers/professorController');
+const { createProfessor, getAllProfessores } = require('../controllers/professorController');
 
+router.post('/', createProfessor);
 router.get('/', getAllProfessores);
 
 module.exports = {professorRouter: router};

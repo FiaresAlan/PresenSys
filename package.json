@@ -8,9 +8,22 @@
   "dependencies": {
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "mssql": "^12.1.0"
+    "mssql": "^12.1.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
-  }
+  },
+  "description": "Branch -> 40: Caio.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FiaresAlan/PresenSys.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/FiaresAlan/PresenSys/issues"
+  },
+  "homepage": "https://github.com/FiaresAlan/PresenSys#readme"
 }
